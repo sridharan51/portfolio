@@ -1355,67 +1355,7 @@
             }
         }
 
-        /* Compact website sizing */
-        html {
-            --base-font-size: 14px;
-        }
-
-        .container {
-            max-width: 1040px;
-        }
-
-        section {
-            padding: 2.5rem 0;
-        }
-
-        @media (min-width: 768px) {
-            section {
-                padding: 3.75rem 0;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            section {
-                padding: 4.5rem 0;
-            }
-        }
-
-        header {
-            padding: 0.65rem 0;
-        }
-
-        .logo {
-            font-size: clamp(1.25rem, 3vw, 1.65rem);
-        }
-
-        .nav-links {
-            gap: clamp(1rem, 3vw, 1.75rem);
-        }
-
-        .nav-links a {
-            font-size: 0.9rem;
-        }
-
-        .section-title {
-            margin-bottom: 2.25rem;
-        }
-
-        .section-title h2 {
-            font-size: clamp(1.45rem, 4vw, 2.5rem);
-            padding-bottom: 10px;
-        }
-
-        .section-title p {
-            font-size: clamp(0.85rem, 1.7vw, 1rem);
-            margin-top: 12px;
-        }
-
-        .btn {
-            padding: 0.75rem 1.45rem;
-            font-size: 0.9rem;
-            min-height: 2.25rem;
-        }
-
+        /* Compact hero/home page sizing */
         .hero {
             min-height: auto;
             padding-top: 5.5rem;
@@ -1434,6 +1374,13 @@
             gap: 2.25rem;
         }
 
+        .hero-image {
+            width: min(100%, 30rem);
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
         .hero-content h1 {
             font-size: clamp(1.7rem, 5vw, 3.1rem);
             margin-bottom: 1rem;
@@ -1450,189 +1397,60 @@
             margin-bottom: 1.5rem;
         }
 
+        .hero .btn {
+            padding: 0.75rem 1.45rem;
+            font-size: 0.9rem;
+            min-height: 2.25rem;
+        }
+
         .profile-frame {
-            max-width: clamp(15rem, 38vw, 25rem);
-            border-width: 6px;
+            max-width: clamp(13.5rem, 32vw, 22rem);
+            border-width: 5px;
         }
 
         .floating-icon {
-            width: clamp(2.6rem, 7vw, 3.4rem);
-            height: clamp(2.6rem, 7vw, 3.4rem);
-            border-radius: 14px;
-            font-size: clamp(1.25rem, 4vw, 2rem);
-        }
-
-        .about-container,
-        .contact-container {
-            gap: 2rem;
-        }
-
-        .about-content h2 {
-            font-size: clamp(1.45rem, 4vw, 2rem);
-        }
-
-        .about-content p {
-            font-size: clamp(0.9rem, 2vw, 1rem);
-            margin-bottom: 1.25rem;
-        }
-
-        .tech-grid {
-            gap: 1.1rem;
-        }
-
-        .tech-item {
-            border-radius: 14px;
-            padding: 1.1rem;
-        }
-
-        .tech-item i {
-            font-size: clamp(2rem, 6vw, 3rem);
-            margin-bottom: 8px;
-        }
-
-        .tech-item span {
-            font-size: clamp(0.85rem, 1.8vw, 1rem);
-            margin-top: 6px;
-        }
-
-        .skills-container {
-            gap: 1.25rem;
-        }
-
-        .skill-card {
-            border-radius: 14px;
-            padding: 1.5rem;
-        }
-
-        .skill-icon {
-            font-size: clamp(2rem, 5vw, 2.7rem);
-            margin-bottom: 1rem;
-        }
-
-        .skill-card h3 {
-            font-size: clamp(1.1rem, 2.4vw, 1.45rem);
-            margin-bottom: 0.8rem;
-        }
-
-        .skill-card p {
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .skill-list {
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .skill-tag,
-        .tech-tag {
-            padding: 0.45rem 0.75rem;
-            font-size: 0.78rem;
-        }
-
-        .circular-progress {
-            width: clamp(5.75rem, 12vw, 6.5rem);
-            height: clamp(5.75rem, 12vw, 6.5rem);
-            margin-top: 0.75rem;
-        }
-
-        .projects-slider {
-            padding: 0 2.75rem;
-        }
-
-        .project-card {
-            border-radius: 14px;
-        }
-
-        .project-img {
-            height: 220px;
-        }
-
-        .project-content {
-            padding: 1.35rem;
-        }
-
-        .project-content h3 {
-            font-size: 1.35rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .project-content p {
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-tech {
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-link {
-            padding: 0.7rem 1.15rem;
-            font-size: 0.85rem;
-        }
-
-        .slider-btn {
-            width: 40px;
-            height: 40px;
-            font-size: 1rem;
-        }
-
-        .slider-dots {
-            margin-top: 1.5rem;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-        }
-
-        .contact-info {
-            gap: 1rem;
-        }
-
-        .contact-item {
-            border-radius: 14px;
-            padding: 1.15rem;
-            gap: 1rem;
-        }
-
-        .contact-icon {
-            width: 3.3rem;
-            height: 3.3rem;
+            width: clamp(2.1rem, 5vw, 2.8rem);
+            height: clamp(2.1rem, 5vw, 2.8rem);
             border-radius: 12px;
+            font-size: clamp(1rem, 3vw, 1.55rem);
         }
 
-        .contact-item h3 {
-            font-size: 1.05rem;
-            margin-bottom: 0.35rem;
+        .floating-icon.js { top: 8%; left: 5%; }
+        .floating-icon.mongodb { top: 2%; left: auto; right: 12%; }
+        .floating-icon.aws { bottom: 8%; left: 4%; }
+        .floating-icon.python { bottom: 7%; right: 8%; }
+        .floating-icon.react { top: 32%; right: 0; }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(8deg); }
         }
 
-        .contact-item p {
-            font-size: 0.88rem;
-            margin-bottom: 0.25rem;
-        }
+        @media (max-width: 1023px) {
+            .hero {
+                padding-top: 5.25rem;
+                padding-bottom: 2.75rem;
+            }
 
-        .contact-form {
-            border-radius: 14px;
-            padding: 1.5rem;
-        }
+            .hero-container {
+                gap: 1.75rem;
+            }
 
-        .form-group {
-            margin-bottom: 1rem;
-        }
+            .hero-content h1 {
+                font-size: clamp(1.8rem, 7vw, 2.8rem);
+            }
 
-        .form-control {
-            padding: 0.8rem;
-            font-size: 0.9rem;
-        }
+            .hero-content p {
+                max-width: 620px;
+            }
 
-        footer {
-            padding: 2.5rem 0 1.5rem;
-        }
+            .profile-frame {
+                max-width: min(56vw, 17rem);
+            }
 
-        .footer-logo {
-            font-size: clamp(1.3rem, 3vw, 1.9rem);
+            .hero-image {
+                width: min(100%, 22rem);
+            }
         }
 
         /* Touch-friendly adjustments for mobile */
@@ -1706,39 +1524,65 @@
 
             .hero {
                 min-height: auto;
-                padding: 6rem 0 3rem;
+                padding: 5rem 0 2.25rem;
             }
 
             .hero-content h1 {
+                font-size: clamp(1.65rem, 10vw, 2.35rem);
                 margin-bottom: 1rem;
             }
 
             .hero-content .typing-wrapper {
+                font-size: clamp(1rem, 6vw, 1.35rem);
                 flex-wrap: wrap;
-                min-height: 3rem;
+                min-height: 2.25rem;
+            }
+
+            .hero-content p {
+                font-size: 0.9rem;
+                line-height: 1.65;
+                margin-bottom: 1.25rem;
             }
 
             .hero-buttons {
                 display: grid;
                 grid-template-columns: 1fr;
                 width: 100%;
-                max-width: 330px;
+                max-width: 290px;
                 margin: 0 auto;
             }
 
             .btn {
                 width: 100%;
-                min-height: 48px;
+                min-height: 44px;
                 border-radius: 14px;
             }
 
             .profile-frame {
-                max-width: min(76vw, 18rem);
-                border-width: 5px;
+                max-width: min(58vw, 13rem);
+                border-width: 4px;
             }
 
             .floating-icons {
-                display: none;
+                display: block;
+            }
+
+            .floating-icon {
+                width: clamp(1.75rem, 9vw, 2.15rem);
+                height: clamp(1.75rem, 9vw, 2.15rem);
+                border-radius: 10px;
+                font-size: clamp(0.9rem, 5vw, 1.15rem);
+            }
+
+            .floating-icon.js { top: 3%; left: 4%; }
+            .floating-icon.mongodb { top: 0; right: 8%; }
+            .floating-icon.react { top: 34%; right: 0; }
+            .floating-icon.aws { bottom: 6%; left: 2%; }
+            .floating-icon.python { bottom: 5%; right: 5%; }
+
+            .hero-image {
+                width: min(100%, 16rem);
+                padding: 0.6rem;
             }
 
             .about-image {
@@ -1895,6 +1739,83 @@
             }
         }
 
+        /* Home section reference sizing */
+        @media (min-width: 1024px) {
+            .hero {
+                min-height: calc(100vh - 88px);
+                padding: 3.8rem 0 3rem;
+            }
+
+            .hero-container {
+                grid-template-columns: minmax(0, 1.18fr) minmax(21rem, 0.82fr);
+                gap: clamp(2rem, 4vw, 4rem);
+            }
+
+            .hero-content h1 {
+                font-size: clamp(2.9rem, 4.1vw, 4rem);
+                margin-bottom: 1.15rem;
+            }
+
+            .hero-content .typing-wrapper {
+                font-size: clamp(1.8rem, 2.5vw, 2.35rem);
+                margin-bottom: 1.35rem;
+            }
+
+            .hero-content p {
+                max-width: 43rem;
+                font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+                line-height: 1.55;
+                margin-bottom: 2rem;
+            }
+
+            .hero-buttons {
+                gap: 1.15rem;
+                flex-wrap: wrap;
+            }
+
+            .hero .btn {
+                min-height: 3.45rem;
+                padding: 0.85rem 1.55rem;
+                font-size: 0.95rem;
+            }
+
+            .hero-image {
+                width: min(100%, 32rem);
+                padding: 1.25rem;
+            }
+
+            .profile-frame {
+                max-width: clamp(22rem, 28vw, 29rem);
+                border-width: 6px;
+            }
+
+            .floating-icon {
+                width: clamp(2.35rem, 3.8vw, 3.3rem);
+                height: clamp(2.35rem, 3.8vw, 3.3rem);
+                font-size: clamp(1.1rem, 2.3vw, 1.75rem);
+            }
+
+            .floating-icon.js { top: 8%; left: 2%; }
+            .floating-icon.mongodb { top: 1%; right: 10%; }
+            .floating-icon.react { top: 30%; right: 0; }
+            .floating-icon.aws { bottom: 8%; left: 2%; }
+            .floating-icon.python { bottom: 6%; right: 9%; }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .hero {
+                padding: 5rem 0 3rem;
+            }
+
+            .hero-image {
+                width: min(100%, 24rem);
+            }
+
+            .profile-frame {
+                max-width: min(52vw, 19rem);
+            }
+        }
+
         /* Landscape orientation for small devices */
         @media (max-height: 600px) and (orientation: landscape) {
             .hero {
@@ -1917,6 +1838,109 @@
             max-width: 100%;
             height: auto;
             display: block;
+        }
+
+        /* Hero and About alignment override */
+        .hero {
+            min-height: 100vh;
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+        }
+
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            min-height: calc(100vh - 6rem);
+        }
+
+        .hero-content,
+        .hero-image {
+            width: 100%;
+        }
+
+        .hero-content {
+            max-width: 640px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 40rem;
+        }
+
+        .hero-image .profile-frame {
+            width: 100%;
+            max-width: clamp(17.5rem, 45vw, 31.25rem);
+        }
+
+        .hero-image .profile-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            text-align: center;
+        }
+
+        .about-image,
+        .about-content {
+            width: 100%;
+        }
+
+        .about-image {
+            max-width: 36rem;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .about-content {
+            max-width: 680px;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 3.75rem;
+            }
+
+            .hero-content {
+                flex: 1;
+            }
+
+            .hero-image {
+                flex: 1;
+                max-width: 45rem;
+            }
+
+            .about-container {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                text-align: left;
+                gap: 3.125rem;
+            }
+
+            .about-image,
+            .about-content {
+                flex: 1;
+            }
         }
     </style>
 </head>
